@@ -52,7 +52,7 @@ const Navbar = () => {
           href="/"
           className="gold font-serif text-xl md:text-2xl font-bold text-[#D4AF37]"
         >
-          LOGO RUX
+          RUXSTYLIST
         </Link>
         
         {/* Desktop Navigation */}
