@@ -3,6 +3,7 @@
 import React, { useState, useEffect } from 'react';
 import { cn } from '@/lib/utils';
 import AnimatedBadge from './ui/AnimatedBadge';
+import Image from 'next/image';
 
 // Portfolio categories and items
 const categories = [
@@ -152,7 +153,7 @@ const Portfolio = () => {
         <div className="portfolio-grid reveal-animation reveal-delay-300">
           {filteredItems.map(item => (
             <div key={item.id} className="portfolio-item">
-              <img src={item.image} alt={item.title} />
+              <Image src={item.image} alt={item.title} />
               <div className="portfolio-overlay">
                 <h3 className="text-xl font-serif font-semibold mb-2">{item.title}</h3>
                 <p className="text-white/70 text-sm">{item.description}</p>

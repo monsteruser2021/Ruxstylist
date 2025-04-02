@@ -1,7 +1,6 @@
 "use client"
 
 import React, { useEffect } from 'react';
-import { cn } from '@/lib/utils';
 import AnimatedBadge from './ui/AnimatedBadge';
 import GlassCard from './ui/GlassCard';
 import { Phone, Mail, Instagram, Calendar } from 'lucide-react';

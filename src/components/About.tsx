@@ -4,11 +4,10 @@ import React, { useEffect } from 'react';
 import { cn } from '@/lib/utils';
 import GlassCard from './ui/GlassCard';
 import AnimatedBadge from './ui/AnimatedBadge';
-import { Award, Users, TrendingUp, Star, Handshake, GraduationCap } from 'lucide-react';
+import { Users, TrendingUp, Star, Handshake, GraduationCap } from 'lucide-react';
+import Image from 'next/image';
 
-interface AboutProps extends React.HTMLAttributes<HTMLDivElement> {}
-
-const About = ({ className, ...props }: AboutProps) => {
+const About = ({ className, ...props }: React.HTMLAttributes<HTMLDivElement>) => {
   useEffect(() => {
     const revealElements = document.querySelectorAll('.reveal-animation');
     
@@ -54,7 +53,7 @@ const About = ({ className, ...props }: AboutProps) => {
               <div className="absolute -bottom-3 -right-3 w-32 h-32 border border-[#D4AF37]/30 rounded-sm z-0"></div>
               
               <div className="relative z-10 overflow-hidden rounded-sm">
-                <img 
+                <Image 
                   src="About.png" 
                   alt="Professional Stylist" 
                   className="w-full h-auto object-cover"
@@ -127,7 +126,7 @@ const About = ({ className, ...props }: AboutProps) => {
                 <h3 className="font-medium text-lg mb-1">Estudiantes</h3>
                 <p className="text-white/70 text-sm">+3000 profesionales graduados.</p>
               </div>
-              
+
             </div>
           </div>
         </div>

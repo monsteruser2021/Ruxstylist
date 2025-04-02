@@ -4,9 +4,7 @@ import React, { useEffect } from 'react';
 import { cn } from '@/lib/utils';
 import AnimatedBadge from './ui/AnimatedBadge';
 
-interface HeroProps extends React.HTMLAttributes<HTMLDivElement> {}
-
-const Hero = ({ className, ...props }: HeroProps) => {
+const Hero = ({ className, ...props }: React.HTMLAttributes<HTMLDivElement>) => {
   useEffect(() => {
     const revealElements = document.querySelectorAll('.reveal-animation');
     
