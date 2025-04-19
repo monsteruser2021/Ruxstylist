@@ -18,15 +18,17 @@ const Footer = () => {
             
             {/* Social media links */}
             <div className="flex space-x-4">
-              <a href="#" className="w-10 h-10 rounded-full flex items-center justify-center border border-[#D4AF37]/30 text-[#D4AF37] hover:bg-[#D4AF37]/10 transition-colors">
+              <a href="https://www.facebook.com/profile.php?id=61575137862867" className="w-10 h-10 rounded-full flex items-center justify-center border border-[#D4AF37]/30 text-[#D4AF37] hover:bg-[#D4AF37]/10 transition-colors">
                 <Facebook className="w-5 h-5" />
               </a>
-              <a href="#" className="w-10 h-10 rounded-full flex items-center justify-center border border-[#D4AF37]/30 text-[#D4AF37] hover:bg-[#D4AF37]/10 transition-colors">
+              <a href="https://www.instagram.com/ruxstylist/" className="w-10 h-10 rounded-full flex items-center justify-center border border-[#D4AF37]/30 text-[#D4AF37] hover:bg-[#D4AF37]/10 transition-colors">
                 <Instagram className="w-5 h-5" /> {/**Incluir tik tok */}
               </a>
+              {/**
               <a href="#" className="w-10 h-10 rounded-full flex items-center justify-center border border-[#D4AF37]/30 text-[#D4AF37] hover:bg-[#D4AF37]/10 transition-colors">
                 <Youtube className="w-5 h-5" />
               </a>
+               */}
               <a href="#contact" className="w-10 h-10 rounded-full flex items-center justify-center border border-[#D4AF37]/30 text-[#D4AF37] hover:bg-[#D4AF37]/10 transition-colors">
                 <Mail className="w-5 h-5" />
               </a>
