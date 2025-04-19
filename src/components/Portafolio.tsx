@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import React, { useState, useEffect } from 'react';
 import { cn } from '@/lib/utils';
@@ -20,57 +20,57 @@ const portfolioItems = [
     id: 1,
     title: 'Transformación Total',
     category: 'cortes',
-    image: 'https://images.unsplash.com/photo-1605497788044-5a32c7078486?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80',
+    image: '/Transformacion.png',
     description: 'Corte de precisión con texturizado y estilizado personalizado',
   },
   {
     id: 2,
     title: 'Balayage Dorado',
     category: 'coloracion',
-    image: 'https://images.unsplash.com/photo-1492106087820-71f1a00d2b11?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80',
+    image: '/Balayage.jpeg',
     description: 'Técnica de degradado con tonos cálidos para un brillo natural',
   },
   {
     id: 3,
     title: 'Estilismo para Gala',
     category: 'eventos',
-    image: 'https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=688&q=80',
+    image: '/Gala.jpeg',
     description: 'Peinado de alto impacto para evento de alfombra roja',
   },
   {
     id: 4,
     title: 'Renovación de Imagen',
     category: 'asesorias',
-    image: 'https://images.unsplash.com/photo-1516914589923-f105f1535f88?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80',
+    image: '/Color.png',
     description: 'Consultoría completa de estilo con análisis de colorimetría',
   },
   {
     id: 5,
     title: 'Corte Pixie Estructurado',
     category: 'cortes',
-    image: 'https://images.unsplash.com/photo-1541421853792-87b21882f371?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=686&q=80',
+    image: '/Pixie.jpeg',
     description: 'Corte geométrico con textura y volumen controlado',
   },
   {
     id: 6,
     title: 'Color Fantasía',
     category: 'coloracion',
-    image: 'https://images.unsplash.com/photo-1618172193763-c511deb635ca?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=764&q=80',
+    image: '/Fantasia.jpeg',
     description: 'Técnica avanzada de coloración con tonos vibrantes',
   },
   {
     id: 7,
     title: 'Estilismo Nupcial',
     category: 'eventos',
-    image: 'https://images.unsplash.com/photo-1578985545062-69928b1d9587?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1089&q=80',
+    image: '/Nupcial.png',
     description: 'Peinado y tocado personalizado para el día especial',
   },
   {
     id: 8,
     title: 'Consultoría Ejecutiva',
     category: 'asesorias',
-    image: 'https://images.unsplash.com/photo-1534030347209-467a5b0ad3e6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80',
-    description: 'Asesoría de imagen profesional para entorno corporativo',
+    image: '/Corporativo.jpeg',
+    description: 'Asesoría de imagen profesional para entorno corporativo.',
   },
 ];
 
@@ -123,7 +123,7 @@ const Portfolio = () => {
           <AnimatedBadge text="PORTAFOLIO" className="reveal-animation mb-4" />
           
           <h2 className="font-serif text-4xl md:text-5xl font-bold mb-6 reveal-animation reveal-delay-100">
-            Galería de <span className="[#D4AF37]-text">Transformaciones</span>
+            Galería de Transformaciones.
           </h2>
           
           <p className="text-white/80 max-w-2xl mx-auto reveal-animation reveal-delay-200">
@@ -150,11 +150,17 @@ const Portfolio = () => {
         </div>
         
         {/* Portfolio grid */}
-        <div className="portfolio-grid reveal-animation reveal-delay-300">
+        <div className="portfolio-grid reveal-animation reveal-delay-300 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {filteredItems.map(item => (
             <div key={item.id} className="portfolio-item">
-              <Image src={item.image} alt={item.title} />
-              <div className="portfolio-overlay">
+              <Image 
+                src={item.image} 
+                alt={item.title} 
+                width={700} 
+                height={500} 
+                className="object-cover rounded-lg"
+              />
+              <div className="portfolio-overlay mt-4">
                 <h3 className="text-xl font-serif font-semibold mb-2">{item.title}</h3>
                 <p className="text-white/70 text-sm">{item.description}</p>
               </div>

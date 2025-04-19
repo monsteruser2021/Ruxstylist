@@ -11,16 +11,13 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
           {/* Logo and brief description */}
           <div>
-            <h2 className="font-serif text-2xl font-bold text-[#D4AF37] mb-4">LOGO RUX</h2>
+            <h2 className="font-serif text-2xl font-bold text-[#D4AF37] mb-4">RUXSTYLIST</h2>
             <p className="text-white/60 mb-6 max-w-xs">
               Transformando visiones en realidad con técnicas innovadoras y un estilo único en la industria de la belleza.
             </p>
             
             {/* Social media links */}
             <div className="flex space-x-4">
-              <a href="#" className="w-10 h-10 rounded-full flex items-center justify-center border border-[#D4AF37]/30 text-[#D4AF37] hover:bg-[#D4AF37]/10 transition-colors">
-                <Instagram className="w-5 h-5" />
-              </a>
               <a href="#" className="w-10 h-10 rounded-full flex items-center justify-center border border-[#D4AF37]/30 text-[#D4AF37] hover:bg-[#D4AF37]/10 transition-colors">
                 <Facebook className="w-5 h-5" />
               </a>
@@ -30,7 +27,7 @@ const Footer = () => {
               <a href="#" className="w-10 h-10 rounded-full flex items-center justify-center border border-[#D4AF37]/30 text-[#D4AF37] hover:bg-[#D4AF37]/10 transition-colors">
                 <Youtube className="w-5 h-5" />
               </a>
-              <a href="#" className="w-10 h-10 rounded-full flex items-center justify-center border border-[#D4AF37]/30 text-[#D4AF37] hover:bg-[#D4AF37]/10 transition-colors">
+              <a href="#contact" className="w-10 h-10 rounded-full flex items-center justify-center border border-[#D4AF37]/30 text-[#D4AF37] hover:bg-[#D4AF37]/10 transition-colors">
                 <Mail className="w-5 h-5" />
               </a>
             </div>
@@ -61,7 +58,7 @@ const Footer = () => {
         
         {/* Copyright */}
         <div className="mt-16 pt-8 border-t border-white/10 text-center text-white/40 text-sm">
-          <p>&copy; {new Date().getFullYear()} LOGO RUX. Todos los derechos reservados.</p>
+          <p>&copy; {new Date().getFullYear()} RUXSTYLIST. Todos los derechos reservados.</p>
         </div>
       </div>
     </footer>
