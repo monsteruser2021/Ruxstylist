@@ -172,7 +172,7 @@ const Services = () => {
                       </div>
                     )}
 
-                    <h4 className="font-serif text-xl font-semibold mb-3">
+                    <h4 className="font-serif text-xl font-semibold mb-3 max-w-[85%] md:max-w-[70%] ">
                       {service.title}
                     </h4>
                     <p className="text-[#222222]/70 text-sm mb-4">

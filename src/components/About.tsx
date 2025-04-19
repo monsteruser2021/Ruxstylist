@@ -83,13 +83,7 @@ const About = ({ className, ...props }: React.HTMLAttributes<HTMLDivElement>) =>
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.4, duration: 0.8, ease: "easeOut" }}
             >
-              Con más de una década de experiencia en la industria, he tenido el
-              privilegio de trabajar con celebridades, participar en desfiles de
-              moda internacionales y colaborar con las marcas más prestigiosas
-              del sector. Mi enfoque combina técnicas tradicionales con
-              innovación constante para crear estilos que no solo resaltan la
-              belleza natural, sino que también reflejan la personalidad única
-              de cada cliente.
+              Con más de dos décadas de experiencia en la industria, he tenido el privilegio de trabajar como formador del area y colaborar con  marcas prestigiosas de rubro estilista. Mi enfoque combina técnicas tradicionales con innovación constante para crear estilos que no solo resaltan la belleza natural, sino que también reflejan la personalidad única de cada cliente.
             </motion.p>
 
             <motion.p
@@ -98,11 +92,7 @@ const About = ({ className, ...props }: React.HTMLAttributes<HTMLDivElement>) =>
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.6, duration: 0.8, ease: "easeOut" }}
             >
-              Mi filosofía se centra en la atención meticulosa a los detalles y
-              un compromiso inquebrantable con la excelencia. Cada servicio que
-              ofrezco está personalizado para satisfacer las necesidades
-              individuales, utilizando productos de la más alta calidad y
-              técnicas de vanguardia.
+              Mi filosofía se centra en  los detalles y  compromiso con un óptimo resultado. Cada servicio es una experiencia única como cada cliente, tomando en cuenta sus necesidades y atributos utilizando productos de comprobable calidad y técnicas adecuadas.
             </motion.p>
 
             {/* Achievements */}
