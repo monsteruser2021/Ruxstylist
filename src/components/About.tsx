@@ -51,7 +51,7 @@ const About = ({ className, ...props }: React.HTMLAttributes<HTMLDivElement>) =>
                   <p className="font-serif text-[#D4AF37] text-sm mb-1">
                     Experiencia
                   </p>
-                  <p className="text-2xl font-bold">10+ Años</p>
+                  <p className="text-2xl font-bold">20+ Años</p>
                 </GlassCard>
               </div>
             </div>
