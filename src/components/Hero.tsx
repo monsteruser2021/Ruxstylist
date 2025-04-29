@@ -41,7 +41,7 @@ const Hero = ({ className, ...props }: React.HTMLAttributes<HTMLDivElement>) => 
             transition={{ delay: 0.2, duration: 0.8, ease: "easeOut" }}
           >
             <span className="block">Creando</span>
-            <span className="gold text-3xl md:text-5xl ">Belleza Excepcional</span>
+            <span className="gold text-3xl md:text-5xl ">Belleza Excepcional.</span>
           </motion.h1>
 
           <motion.p
